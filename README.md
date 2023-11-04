@@ -12,5 +12,6 @@ with LoggingContext(request_id="some-id", user_name="John Doe"):
 ```
 
 This library is implemented using Python's [Context Variables](https://docs.python.org/3/library/contextvars.html), and 
-therefore works both in multithreaded settings and with `asyncio`. Therefore, it is superior to solutions based on
-thread-local data, which will not work with async functions well.
+therefore works in multithreaded settings as well `asyncio`. This is in contrast to solutions based on
+thread-local data, which will not work as intended async functions (such as 
+[log-with-context](https://github.com/neocrym/log-with-context/tree/main)).
