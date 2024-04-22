@@ -19,7 +19,7 @@ logger.addFilter(LoggingContextInjectingFilter())
 
 with LoggingContext(request_id="some-id", user_name="John Doe"):
     # The output log record will include `request_id` and `user_name` fields, which can be printed by formatters such 
-    # python-json-logger's JsonFormatter (see https://github.com/madzak/python-json-logger).
+    # as python-json-logger's JsonFormatter (see https://github.com/madzak/python-json-logger).
     logger.info("Hello world!")  
 ```
 
