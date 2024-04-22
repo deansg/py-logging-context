@@ -4,6 +4,8 @@ A Python util for automatically adding extra log fields to logs.
 
 ### Installation
 
+This project is published to [PyPI](https://pypi.org/project/py-logging-context/0.1.0/) and can be installed using:
+
 `pip install py-logging-context==0.1.0`
 
 ### Example Usage
