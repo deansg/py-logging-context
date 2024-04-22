@@ -25,3 +25,5 @@ This library is implemented using Python's [Context Variables](https://docs.pyth
 therefore works in multithreaded settings as well `asyncio`. This is in contrast to solutions based on
 thread-local data, which will not work as intended async functions (such as
 [log-with-context](https://github.com/neocrym/log-with-context/tree/main)).
+
+This is a lightweight library and has no additional dependencies.
