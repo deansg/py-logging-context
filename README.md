@@ -6,14 +6,16 @@ A Python util for automatically adding extra log fields to logs.
 
 This project is published to [PyPI](https://pypi.org/project/py-logging-context/0.1.0/) and can be installed using:
 
-`pip install py-logging-context==0.1.0`
+`pip install py-logging-context==0.1.1`
 
 ### Example Usage
 
 ```python
-from py-logging-context import LoggingContext
+import logging
+from py_logging_context import LoggingContext, LoggingContextInjectingFilter
 
-logger = get_logger()
+logger = logging.getLogger()
+logger.addFilter(LoggingContextInjectingFilter())
 
 with LoggingContext(request_id="some-id", user_name="John Doe"):
     logger.info("Hello world!")  # log record will include `request_id` and `user_name` fields

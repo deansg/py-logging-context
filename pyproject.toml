@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "py-logging-context"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Python util for automatically adding extra log fields to logs"
 readme = "README.md"
 authors = [{ name = "Dean Gurvitz", email = "deansg@gmail.com" }]
