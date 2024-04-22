@@ -4,7 +4,7 @@ import unittest
 from py_logging_context import LoggingContextInjectingFilter, LoggingContext
 
 
-class MyTestCase(unittest.TestCase):
+class TestLoggingContext(unittest.TestCase):
     # noinspection PyUnresolvedReferences
     def test_sanity(self):
         logger = logging.getLogger()
